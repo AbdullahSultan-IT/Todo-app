@@ -1,23 +1,18 @@
-feet_inch = input("enter feet and inches")
-
-def parse (feet_inch):
-    
-    part = feet_inch.split(" ")
-    m = float(part[0])
-    i = float(part[1])
-    return m , i
-    
-
-
-def convert(m , i):
-    
-    matars = m * 0.30 + i * 0.02
-    return matars
-
-
-
-m , i = parse(feet_inch)
+import FreeSimpleGUI as sg
  
-resulst = convert(m , i)
-
-print(resulst)
+label = sg.Text("What are dolphins?")
+option1 = sg.Radio("Amphibians", group_id="question1")
+option2 = sg.Radio("Fish", group_id="question1")
+option3 = sg.Radio("Mammals", group_id="question1")
+option4 = sg.Radio("Birds", group_id="question1")
+ 
+window = sg.Window("File Compressor",
+                   layout=[[label],
+                           [option1, 
+                            option2, 
+                            option3, 
+                            option4],
+                           ])
+ 
+window.read()
+window.close()
