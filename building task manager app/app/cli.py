@@ -39,7 +39,7 @@ while True:
 
             todos [numofname - 1] = NewTodo + '\n'
             
-            functions.write_todos(filepath="files/todos.txt",todos=todos)
+            functions.write_todos(filepath="todos.txt",todos=todos)
 
         except ValueError :
             print("ERROR !!  enter a number of the todo after the word edit")
