@@ -1,4 +1,4 @@
-FILEPATH="todos.txt"
+FILEPATH="/Users/abdullah37/STUDY/IT 315/PracticingForPython/day1/building task manager app/app/todos.txt"
 
 
 def get_todos(filepath=FILEPATH):
