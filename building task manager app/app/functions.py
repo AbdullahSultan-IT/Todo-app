@@ -9,7 +9,7 @@ def get_todos(filepath=FILEPATH):
 def write_todos( todos,  filepath=FILEPATH):
     with  open(filepath , "w") as file :
             file.writelines(todos)
-print(__name__)            
+            
 if __name__ == "__main__" :     
     print("hello im in  func")
     print(get_todos())
