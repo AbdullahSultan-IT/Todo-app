@@ -1,18 +1,23 @@
 import FreeSimpleGUI as sg
- 
-label = sg.Text("What are dolphins?")
-option1 = sg.Radio("Amphibians", group_id="question1")
-option2 = sg.Radio("Fish", group_id="question1")
-option3 = sg.Radio("Mammals", group_id="question1")
-option4 = sg.Radio("Birds", group_id="question1")
- 
-window = sg.Window("File Compressor",
-                   layout=[[label],
-                           [option1, 
-                            option2, 
-                            option3, 
-                            option4],
-                           ])
- 
-window.read()
-window.close()
+
+text1 = sg.Text("enter feet:") 
+lebal1 = sg.InputText(key="feet")
+
+
+text2 = sg.Text("enter inches:") 
+lebal2 = sg.InputText(key="inches")
+
+convert_button = sg.Button("convert")
+exit_button = sg.Button("exit")
+
+layout = [[text1 , lebal1],
+          [text2 , lebal2],
+          [convert_button , exit_button]
+          ]
+
+window = sg.Window("conveting program" , layout=layout ,font=('Helvetica', 20))
+
+while True :
+    event , values = window.read()
+    match event:
+        case ""

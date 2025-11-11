@@ -1,5 +1,6 @@
 sleep and eat
 study python3
-study linux next semester 
 our program in useble nowww !
 yestarday we study for more than 4 hours congrats 
+we fix the file path problem !
+study linux next semester 
